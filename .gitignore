@@ -1,4 +1,9 @@
 # Logs
+docs/
+docs2/
+SYDocs/
+sydocapp/public/docs_html/
+sydocapp/public/docs_raw/
 logs
 *.log
 npm-debug.log*

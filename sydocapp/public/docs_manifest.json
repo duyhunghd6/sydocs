@@ -437,16 +437,6 @@
       }
     }
   },
-  "Sách dành cho Yogies": {
-    "Khóa học kế toán": {
-      "html": "docs_html/Sách dành cho Yogies/Khóa học kế toán.html",
-      "raw": "docs_raw/Sách dành cho Yogies/Khóa học kế toán.pdf"
-    },
-    "SY1008TreatmentsbookletA5engl": {
-      "html": "docs_html/Sách dành cho Yogies/SY1008TreatmentsbookletA5engl.html",
-      "raw": "docs_raw/Sách dành cho Yogies/SY1008TreatmentsbookletA5engl.docx"
-    }
-  },
   "Sách kỹ thuật": {
     "Sổ tay Mantras": {
       "html": "docs_html/Sách kỹ thuật/Sổ tay Mantras.html",

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Box,
@@ -29,6 +29,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import SlideshowIcon from "@mui/icons-material/Slideshow";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import AuthDialog from "./AuthDialog.js"; // Add .js extension
+import { useNavigate, useLocation } from "react-router-dom"; // <-- new import
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -239,99 +240,11 @@ function Sidebar({ tree, onSelect, selectedTitle }) {
 }
 
 //
-// TableOfContents Component
-//
-function TableOfContents({ tree, onSelect }) {
-  const renderContent = (node, level = 0) => {
-    return Object.entries(node).map(([key, value]) => {
-      // Handle protected content
-      if (value && value.protected) {
-        return (
-          <Box key={key} sx={{ ml: level * 2, mb: 1 }}>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                fontWeight: 'bold',
-                color: 'text.secondary',
-                fontSize: level === 0 ? '1.1rem' : '1rem'
-              }}
-            >
-              {key} (Protected)
-            </Typography>
-          </Box>
-        );
-      }
-
-      // Handle files (both single and dual-view)
-      if (typeof value === 'string' || (typeof value === 'object' && (value.html || value.raw))) {
-        const url = typeof value === 'string' ? value : value.html;
-        return (
-          <Box key={key} sx={{ ml: level * 2, mb: 1 }}>
-            <Typography
-              component="a"
-              variant="body1"
-              onClick={() => onSelect(key, url)}
-              sx={{
-                cursor: 'pointer',
-                color: 'primary.main',
-                textDecoration: 'none',
-                '&:hover': {
-                  textDecoration: 'underline',
-                },
-                fontSize: level === 0 ? '1.1rem' : '1rem'
-              }}
-            >
-              {key}
-            </Typography>
-          </Box>
-        );
-      }
-
-      // Handle folders
-      if (typeof value === 'object' && value !== null) {
-        return (
-          <Box key={key} sx={{ mb: 2 }}>
-            <Typography 
-              variant="h6" 
-              sx={{ 
-                ml: level * 2, 
-                mb: 1,
-                fontSize: level === 0 ? '1.2rem' : '1.1rem',
-                fontWeight: 'bold'
-              }}
-            >
-              {key}
-            </Typography>
-            {renderContent(value, level + 1)}
-          </Box>
-        );
-      }
-
-      return null;
-    });
-  };
-
-  return (
-    <Box sx={{ maxWidth: '800px', mx: 'auto', p: { xs: 2, sm: 4 } }}>
-      <Typography variant="h4" sx={{ mb: 4 }}>
-        Table of Contents
-      </Typography>
-      {renderContent(tree)}
-    </Box>
-  );
-}
-
-//
 // ContentViewer Component
 //
 // The useEffect hook is unconditionally called so that React Hooks are always called in the same order.
-function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect }) {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const [pageWidth, setPageWidth] = useState(null);
-  const contentRef = useRef(null);
-
-  // Enhanced getExtension function remains the same
+function ContentViewer({ docUrl, selectedTitle }) {
+  // Enhanced getExtension: if docUrl is a data URL, extract mime type.
   const getExtension = (url) => {
     if (url.startsWith("data:")) {
       // Example: "data:application/pdf;base64,..." 
@@ -353,22 +266,6 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect }) {
   const ext = docUrl ? getExtension(docUrl) : null;
   const [docxHtml, setDocxHtml] = useState(null);
 
-  // Update page width on container size changes
-  useEffect(() => {
-    if (!contentRef.current) return;
-
-    const updateWidth = () => {
-      if (contentRef.current) {
-        setPageWidth(contentRef.current.offsetWidth - (isMobile ? 32 : 40));
-      }
-    };
-
-    updateWidth();
-    window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
-  }, [isMobile]);
-
-  // DOCX conversion effect remains the same
   useEffect(() => {
     if (docUrl && ext === "docx") {
       // Fetch the DOCX file as an ArrayBuffer and convert it using Mammoth.
@@ -387,33 +284,22 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect }) {
   if (!docUrl) {
     return (
       <Box
-        ref={contentRef}
-        sx={{
-          flexGrow: 1,
-          p: { xs: 2, sm: 3 },
-          height: "calc(100vh - 64px)",
-          overflow: "auto",
-          width: "100%"
-        }}
+        sx={{ flexGrow: 1, p: 3, height: "calc(100vh - 64px)", overflow: "auto" }}
       >
-        <TableOfContents tree={manifest || {}} onSelect={handleSelect} />
+        <Typography variant="body1">
+          Please select a document from the sidebar.
+        </Typography>
       </Box>
     );
   }
 
-  // Render PDF
+  // Render PDF.
   if (ext === "pdf") {
+    // Use iframe if the raw view is selected; otherwise use react-pdf.
     if (selectedTitle && selectedTitle.endsWith("(Raw)")) {
       return (
         <Box
-          ref={contentRef}
-          sx={{
-            flexGrow: 1,
-            p: { xs: 2, sm: 3 },
-            height: "calc(100vh - 64px)",
-            overflow: "auto",
-            width: "100%"
-          }}
+          sx={{ flexGrow: 1, p: 3, height: "calc(100vh - 64px)", overflow: "auto" }}
         >
           <iframe
             src={docUrl}
@@ -425,43 +311,21 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect }) {
     } else {
       return (
         <Box
-          ref={contentRef}
-          sx={{
-            flexGrow: 1,
-            p: { xs: 2, sm: 3 },
-            height: "calc(100vh - 64px)",
-            overflow: "auto",
-            width: "100%"
-          }}
+          sx={{ flexGrow: 1, p: 3, height: "calc(100vh - 64px)", overflow: "auto" }}
         >
           <Document file={docUrl}>
-            <Page
-              pageNumber={1}
-              width={pageWidth}
-              scale={isMobile ? 0.8 : 1}
-            />
+            {/* Render first page for demo */}
+            <Page pageNumber={1} width={window.innerWidth - drawerWidth - 40} />
           </Document>
         </Box>
       );
     }
   }
-
-  // Render DOCX
+  // Render DOCX using Mammoth.
   else if (ext === "docx") {
     return (
       <Box
-        ref={contentRef}
-        sx={{
-          flexGrow: 1,
-          p: { xs: 2, sm: 3 },
-          height: "calc(100vh - 64px)",
-          overflow: "auto",
-          width: "100%",
-          "& img": {
-            maxWidth: "100%",
-            height: "auto"
-          }
-        }}
+        sx={{ flexGrow: 1, p: 3, height: "calc(100vh - 64px)", overflow: "auto" }}
       >
         {docxHtml ? (
           <div dangerouslySetInnerHTML={{ __html: docxHtml }} />
@@ -471,19 +335,27 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect }) {
       </Box>
     );
   }
-
-  // Other file types
+  // For DOC files, which are not supported by Mammoth, show a download link.
+  else if (ext === "doc") {
+    return (
+      <Box
+        sx={{ flexGrow: 1, p: 3, height: "calc(100vh - 64px)", overflow: "auto" }}
+      >
+        <Typography variant="body1">
+          DOC files cannot be previewed.{" "}
+          <a href={docUrl} download>
+            Download file
+          </a>
+          .
+        </Typography>
+      </Box>
+    );
+  }
+  // Fallback: use an iframe for other file types.
   else {
     return (
       <Box
-        ref={contentRef}
-        sx={{
-          flexGrow: 1,
-          p: { xs: 2, sm: 3 },
-          height: "calc(100vh - 64px)",
-          overflow: "auto",
-          width: "100%"
-        }}
+        sx={{ flexGrow: 1, p: 3, height: "calc(100vh - 64px)", overflow: "auto" }}
       >
         <iframe
           src={docUrl}
@@ -507,19 +379,40 @@ function App() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const navigate = useNavigate(); // <-- new hook
+  const location = useLocation(); // <-- new hook
+
+  /* Fetch both docs_manifest.json and docs_media_manifest.json, then merge them */
   useEffect(() => {
-    fetch("/docs_manifest.json")
-      .then((res) => res.json())
-      .then((data) => setManifest(data))
-      .catch((err) => console.error("Error loading manifest:", err));
+    Promise.all([
+      fetch("/docs_manifest.json").then((res) => res.json()),
+      fetch("/docs_media_manifest.json").then((res) => res.json()),
+    ])
+      .then(([docManifest, mediaManifest]) => {
+        // Shallow merge; adjust for deep merge if needed.
+        const merged = { ...docManifest, ...mediaManifest };
+        setManifest(merged);
+      })
+      .catch((err) => console.error("Error loading manifests:", err));
   }, []);
 
-  const tree = manifest || {};
+  // Initialize state from URL query params
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const titleParam = params.get("title");
+    const urlParam = params.get("url");
+    if (titleParam && urlParam) {
+      setSelectedTitle(titleParam);
+      setSelectedDocUrl(urlParam);
+      document.title = titleParam;
+    }
+  }, [location.search]);
 
   const handleSelect = (title, url) => {
     setSelectedTitle(title);
     setSelectedDocUrl(url);
     document.title = title;
+    navigate(`/?title=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`);
     if (isMobile) {
       setMobileOpen(false);
     }
@@ -528,6 +421,8 @@ function App() {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const tree = manifest || {};
 
   const drawer = (
     <Sidebar tree={tree} onSelect={handleSelect} selectedTitle={selectedTitle} />
@@ -596,12 +491,7 @@ function App() {
           mt: isMobile ? 8 : 0,
         }}
       >
-        <ContentViewer 
-          docUrl={selectedDocUrl} 
-          selectedTitle={selectedTitle} 
-          manifest={manifest} 
-          handleSelect={handleSelect} 
-        />
+        <ContentViewer docUrl={selectedDocUrl} selectedTitle={selectedTitle} />
       </Box>
     </Box>
   );

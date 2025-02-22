@@ -1,456 +1,564 @@
 {
   "Bài Giảng": {
     "XMAS PUJA 1997": {
-      "html": "docs_html/Bài Giảng/XMAS PUJA 1997.html",
-      "raw": "docs_raw/Bài Giảng/XMAS PUJA 1997.docx"
+      "html_url": "docs_html/Bài Giảng/XMAS PUJA 1997.html",
+      "raw_url": "docs_raw/Bài Giảng/XMAS PUJA 1997.docx",
+      "friendly_url": "bai-giang/xmas-puja-1997"
     }
   },
   "Bài viết": {
     "10 Điều lĩnh ngộ về Thiền": {
-      "html": "docs_html/Bài viết/10 Điều lĩnh ngộ về Thiền.html",
-      "raw": "docs_raw/Bài viết/10 Điều lĩnh ngộ về Thiền.doc"
+      "html_url": "docs_html/Bài viết/10 Điều lĩnh ngộ về Thiền.html",
+      "raw_url": "docs_raw/Bài viết/10 Điều lĩnh ngộ về Thiền.doc",
+      "friendly_url": "bai-viet/10-dieu-linh-ngo-ve-thien"
     },
     "1_Phản tỉnh và thiền định": {
-      "html": "docs_html/Bài viết/1_Phản tỉnh và thiền định.html",
-      "raw": "docs_raw/Bài viết/1_Phản tỉnh và thiền định.doc"
+      "html_url": "docs_html/Bài viết/1_Phản tỉnh và thiền định.html",
+      "raw_url": "docs_raw/Bài viết/1_Phản tỉnh và thiền định.doc",
+      "friendly_url": "bai-viet/1-phan-tinh-va-thien-dinh"
     },
     "21 Câu hỏi thường gặp": {
-      "html": "docs_html/Bài viết/21 Câu hỏi thường gặp.html",
-      "raw": "docs_raw/Bài viết/21 Câu hỏi thường gặp.docx"
+      "html_url": "docs_html/Bài viết/21 Câu hỏi thường gặp.html",
+      "raw_url": "docs_raw/Bài viết/21 Câu hỏi thường gặp.docx",
+      "friendly_url": "bai-viet/21-cau-hoi-thuong-gap"
     },
     "2_Thiền định là gì": {
-      "html": "docs_html/Bài viết/2_Thiền định là gì.html",
-      "raw": "docs_raw/Bài viết/2_Thiền định là gì.docx"
+      "html_url": "docs_html/Bài viết/2_Thiền định là gì.html",
+      "raw_url": "docs_raw/Bài viết/2_Thiền định là gì.docx",
+      "friendly_url": "bai-viet/2-thien-dinh-la-gi"
     },
     "3_Lời khuyên tới Yogies 26.9.1980": {
-      "html": "docs_html/Bài viết/3_Lời khuyên tới Yogies 26.9.1980.html",
-      "raw": "docs_raw/Bài viết/3_Lời khuyên tới Yogies 26.9.1980.docx"
+      "html_url": "docs_html/Bài viết/3_Lời khuyên tới Yogies 26.9.1980.html",
+      "raw_url": "docs_raw/Bài viết/3_Lời khuyên tới Yogies 26.9.1980.docx",
+      "friendly_url": "bai-viet/3-loi-khuyen-toi-yogies-26-9-1980"
     },
     "4_Guru-Puja19.07.1992": {
-      "html": "docs_html/Bài viết/4_Guru-Puja19.07.1992.html",
-      "raw": "docs_raw/Bài viết/4_Guru-Puja19.07.1992.docx"
+      "html_url": "docs_html/Bài viết/4_Guru-Puja19.07.1992.html",
+      "raw_url": "docs_raw/Bài viết/4_Guru-Puja19.07.1992.docx",
+      "friendly_url": "bai-viet/4-guru-puja19-07-1992"
     },
     "5_MahaSahasrara Puja - Khởi đầu kỷ nguyên mới": {
-      "html": "docs_html/Bài viết/5_MahaSahasrara Puja - Khởi đầu kỷ nguyên mới.html",
-      "raw": "docs_raw/Bài viết/5_MahaSahasrara Puja - Khởi đầu kỷ nguyên mới.docx"
+      "html_url": "docs_html/Bài viết/5_MahaSahasrara Puja - Khởi đầu kỷ nguyên mới.html",
+      "raw_url": "docs_raw/Bài viết/5_MahaSahasrara Puja - Khởi đầu kỷ nguyên mới.docx",
+      "friendly_url": "bai-viet/5-mahasahasrara-puja-khoi-dau-ky-nguyen-moi"
     },
     "6_Cách vượt qua Ego và Hiểu rõ về bản thân": {
-      "html": "docs_html/Bài viết/6_Cách vượt qua Ego và Hiểu rõ về bản thân.html",
-      "raw": "docs_raw/Bài viết/6_Cách vượt qua Ego và Hiểu rõ về bản thân.docx"
+      "html_url": "docs_html/Bài viết/6_Cách vượt qua Ego và Hiểu rõ về bản thân.html",
+      "raw_url": "docs_raw/Bài viết/6_Cách vượt qua Ego và Hiểu rõ về bản thân.docx",
+      "friendly_url": "bai-viet/6-cach-vuot-qua-ego-va-hieu-ro-ve-ban-than"
     },
     "7_Thật khó để nói về Sahaja Yoga": {
-      "html": "docs_html/Bài viết/7_Thật khó để nói về Sahaja Yoga.html",
-      "raw": "docs_raw/Bài viết/7_Thật khó để nói về Sahaja Yoga.doc"
+      "html_url": "docs_html/Bài viết/7_Thật khó để nói về Sahaja Yoga.html",
+      "raw_url": "docs_raw/Bài viết/7_Thật khó để nói về Sahaja Yoga.doc",
+      "friendly_url": "bai-viet/7-that-kho-de-noi-ve-sahaja-yoga"
     },
     "Các bước 1 buổi thiền online": {
-      "html": "docs_html/Bài viết/Các bước 1 buổi thiền online.html",
-      "raw": "docs_raw/Bài viết/Các bước 1 buổi thiền online.docx"
+      "html_url": "docs_html/Bài viết/Các bước 1 buổi thiền online.html",
+      "raw_url": "docs_raw/Bài viết/Các bước 1 buổi thiền online.docx",
+      "friendly_url": "bai-viet/cac-buoc-1-buoi-thien-online"
     },
     "Cải thiện chất lượng Thiền": {
-      "html": "docs_html/Bài viết/Cải thiện chất lượng Thiền.html",
-      "raw": "docs_raw/Bài viết/Cải thiện chất lượng Thiền.docx"
+      "html_url": "docs_html/Bài viết/Cải thiện chất lượng Thiền.html",
+      "raw_url": "docs_raw/Bài viết/Cải thiện chất lượng Thiền.docx",
+      "friendly_url": "bai-viet/cai-thien-chat-luong-thien"
     },
     "Hướng dẫn Thiền định": {
-      "html": "docs_html/Bài viết/Hướng dẫn Thiền định.html",
-      "raw": "docs_raw/Bài viết/Hướng dẫn Thiền định.docx"
+      "html_url": "docs_html/Bài viết/Hướng dẫn Thiền định.html",
+      "raw_url": "docs_raw/Bài viết/Hướng dẫn Thiền định.docx",
+      "friendly_url": "bai-viet/huong-dan-thien-dinh"
     },
     "Hướng dẫn thiền định tiếng Anh": {
-      "html": "docs_html/Bài viết/Hướng dẫn thiền định tiếng Anh.html",
-      "raw": "docs_raw/Bài viết/Hướng dẫn thiền định tiếng Anh.docx"
+      "html_url": "docs_html/Bài viết/Hướng dẫn thiền định tiếng Anh.html",
+      "raw_url": "docs_raw/Bài viết/Hướng dẫn thiền định tiếng Anh.docx",
+      "friendly_url": "bai-viet/huong-dan-thien-dinh-tieng-anh"
     },
     "Kundalini là gì": {
-      "html": "docs_html/Bài viết/Kundalini là gì.html",
-      "raw": "docs_raw/Bài viết/Kundalini là gì.docx"
+      "html_url": "docs_html/Bài viết/Kundalini là gì.html",
+      "raw_url": "docs_raw/Bài viết/Kundalini là gì.docx",
+      "friendly_url": "bai-viet/kundalini-la-gi"
     },
     "Phụ nữ và đàn ông": {
-      "html": "docs_html/Bài viết/Phụ nữ và đàn ông.html",
-      "raw": "docs_raw/Bài viết/Phụ nữ và đàn ông.docx"
+      "html_url": "docs_html/Bài viết/Phụ nữ và đàn ông.html",
+      "raw_url": "docs_raw/Bài viết/Phụ nữ và đàn ông.docx",
+      "friendly_url": "bai-viet/phu-nu-va-dan-ong"
     },
     "TRIPURA RAHASYA": {
-      "html": "docs_html/Bài viết/TRIPURA RAHASYA.html",
-      "raw": "docs_raw/Bài viết/TRIPURA RAHASYA.docx"
+      "html_url": "docs_html/Bài viết/TRIPURA RAHASYA.html",
+      "raw_url": "docs_raw/Bài viết/TRIPURA RAHASYA.docx",
+      "friendly_url": "bai-viet/tripura-rahasya"
     },
     "The Unknown Life of Jesus Christ": {
-      "html": "docs_html/Bài viết/The Unknown Life of Jesus Christ.html",
-      "raw": "docs_raw/Bài viết/The Unknown Life of Jesus Christ.docx"
+      "html_url": "docs_html/Bài viết/The Unknown Life of Jesus Christ.html",
+      "raw_url": "docs_raw/Bài viết/The Unknown Life of Jesus Christ.docx",
+      "friendly_url": "bai-viet/the-unknown-life-of-jesus-christ"
     },
     "Tĩnh lặng tâm trí": {
-      "html": "docs_html/Bài viết/Tĩnh lặng tâm trí.html",
-      "raw": "docs_raw/Bài viết/Tĩnh lặng tâm trí.doc"
+      "html_url": "docs_html/Bài viết/Tĩnh lặng tâm trí.html",
+      "raw_url": "docs_raw/Bài viết/Tĩnh lặng tâm trí.doc",
+      "friendly_url": "bai-viet/tinh-lang-tam-tri"
     }
   },
   "Beginners": {
     "Handout": {
       "Final_Aarti, Puja, Havan": {
-        "html": "docs_html/Beginners/Handout/Final_Aarti, Puja, Havan.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Aarti, Puja, Havan.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Aarti, Puja, Havan.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Aarti, Puja, Havan.pdf",
+        "friendly_url": "beginners/handout/final-aarti-puja-havan"
       },
       "Final_Tuần 10_Cái tôi và thói đặt điều kiện": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 10_Cái tôi và thói đặt điều kiện.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 10_Cái tôi và thói đặt điều kiện.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 10_Cái tôi và thói đặt điều kiện.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 10_Cái tôi và thói đặt điều kiện.pdf",
+        "friendly_url": "beginners/handout/final-tuan-10-cai-toi-va-thoi-dat-dieu-kien"
       },
       "Final_Tuần 11 - Gan & Sự chú tâm": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 11 - Gan & Sự chú tâm.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 11 - Gan & Sự chú tâm.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 11 - Gan & Sự chú tâm.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 11 - Gan & Sự chú tâm.pdf",
+        "friendly_url": "beginners/handout/final-tuan-11-gan-su-chu-tam"
       },
       "Final_Tuần 12 - Ngày của Sahasrara": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 12 - Ngày của Sahasrara.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 12 - Ngày của Sahasrara.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 12 - Ngày của Sahasrara.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 12 - Ngày của Sahasrara.pdf",
+        "friendly_url": "beginners/handout/final-tuan-12-ngay-cua-sahasrara"
       },
       "Final_Tuần 13_Sắc màu của linh hồn": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 13_Sắc màu của linh hồn.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 13_Sắc màu của linh hồn.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 13_Sắc màu của linh hồn.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 13_Sắc màu của linh hồn.pdf",
+        "friendly_url": "beginners/handout/final-tuan-13-sac-mau-cua-linh-hon"
       },
       "Final_Tuần 14_Sự hợp nhất trọn vẹn": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 14_Sự hợp nhất trọn vẹn.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 14_Sự hợp nhất trọn vẹn.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 14_Sự hợp nhất trọn vẹn.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 14_Sự hợp nhất trọn vẹn.pdf",
+        "friendly_url": "beginners/handout/final-tuan-14-su-hop-nhat-tron-ven"
       },
       "Final_Tuần 15_Gốc rễ của lòng vị tha": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 15_Gốc rễ của lòng vị tha.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 15_Gốc rễ của lòng vị tha.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 15_Gốc rễ của lòng vị tha.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 15_Gốc rễ của lòng vị tha.pdf",
+        "friendly_url": "beginners/handout/final-tuan-15-goc-re-cua-long-vi-tha"
       },
       "Final_Tuần 16_Giới thiệu về mantras": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 16_Giới thiệu về mantras.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 16_Giới thiệu về mantras.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 16_Giới thiệu về mantras.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 16_Giới thiệu về mantras.pdf",
+        "friendly_url": "beginners/handout/final-tuan-16-gioi-thieu-ve-mantras"
       },
       "Final_Tuần 17_Sự nhận thức": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 17_Sự nhận thức.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 17_Sự nhận thức.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 17_Sự nhận thức.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 17_Sự nhận thức.pdf",
+        "friendly_url": "beginners/handout/final-tuan-17-su-nhan-thuc"
       },
       "Final_Tuần 18_Adi Shakti - Sức mạnh của lòng trắc ẩn": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 18_Adi Shakti - Sức mạnh của lòng trắc ẩn.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 18_Adi Shakti - Sức mạnh của lòng trắc ẩn.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 18_Adi Shakti - Sức mạnh của lòng trắc ẩn.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 18_Adi Shakti - Sức mạnh của lòng trắc ẩn.pdf",
+        "friendly_url": "beginners/handout/final-tuan-18-adi-shakti-suc-manh-cua-long-trac-an"
       },
       "Final_Tuần 1_Giới thiệu về Sahaja Yoga": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 1_Giới thiệu về Sahaja Yoga.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 1_Giới thiệu về Sahaja Yoga.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 1_Giới thiệu về Sahaja Yoga.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 1_Giới thiệu về Sahaja Yoga.pdf",
+        "friendly_url": "beginners/handout/final-tuan-1-gioi-thieu-ve-sahaja-yoga"
       },
       "Final_Tuần 2_Sự trải nghiệm": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 2_Sự trải nghiệm.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 2_Sự trải nghiệm.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 2_Sự trải nghiệm.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 2_Sự trải nghiệm.pdf",
+        "friendly_url": "beginners/handout/final-tuan-2-su-trai-nghiem"
       },
       "Final_Tuần 3_Ba kênh năng lượng": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 3_Ba kênh năng lượng.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 3_Ba kênh năng lượng.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 3_Ba kênh năng lượng.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 3_Ba kênh năng lượng.pdf",
+        "friendly_url": "beginners/handout/final-tuan-3-ba-kenh-nang-luong"
       },
       "Final_Tuần 4_Các luân xa_Phần 1": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 4_Các luân xa_Phần 1.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 4_Các luân xa_Phần 1.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 4_Các luân xa_Phần 1.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 4_Các luân xa_Phần 1.pdf",
+        "friendly_url": "beginners/handout/final-tuan-4-cac-luan-xa-phan-1"
       },
       "Final_Tuần 5_Các luân xa_Phần 2": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 5_Các luân xa_Phần 2.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 5_Các luân xa_Phần 2.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 5_Các luân xa_Phần 2.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 5_Các luân xa_Phần 2.pdf",
+        "friendly_url": "beginners/handout/final-tuan-5-cac-luan-xa-phan-2"
       },
       "Final_Tuần 6_ Người thầy": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 6_ Người thầy.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 6_ Người thầy.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 6_ Người thầy.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 6_ Người thầy.pdf",
+        "friendly_url": "beginners/handout/final-tuan-6-nguoi-thay"
       },
       "Final_Tuần 7_Lời khuyên về thiền định": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 7_Lời khuyên về thiền định.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 7_Lời khuyên về thiền định.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 7_Lời khuyên về thiền định.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 7_Lời khuyên về thiền định.pdf",
+        "friendly_url": "beginners/handout/final-tuan-7-loi-khuyen-ve-thien-dinh"
       },
       "Final_Tuần 8_Những rung động": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 8_Những rung động.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 8_Những rung động.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 8_Những rung động.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 8_Những rung động.pdf",
+        "friendly_url": "beginners/handout/final-tuan-8-nhung-rung-dong"
       },
       "Final_Tuần 9_ Năm yếu tố hình thành nên cuộc sống": {
-        "html": "docs_html/Beginners/Handout/Final_Tuần 9_ Năm yếu tố hình thành nên cuộc sống.html",
-        "raw": "docs_raw/Beginners/Handout/Final_Tuần 9_ Năm yếu tố hình thành nên cuộc sống.pdf"
+        "html_url": "docs_html/Beginners/Handout/Final_Tuần 9_ Năm yếu tố hình thành nên cuộc sống.html",
+        "raw_url": "docs_raw/Beginners/Handout/Final_Tuần 9_ Năm yếu tố hình thành nên cuộc sống.pdf",
+        "friendly_url": "beginners/handout/final-tuan-9-nam-yeu-to-hinh-thanh-nen-cuoc-song"
       }
     },
     "Techniques": {
       "FInal_0. 09 BƯỚC KHAI TÂM": {
-        "html": "docs_html/Beginners/Techniques/FInal_0. 09 BƯỚC KHAI TÂM.html",
-        "raw": "docs_raw/Beginners/Techniques/FInal_0. 09 BƯỚC KHAI TÂM.pdf"
+        "html_url": "docs_html/Beginners/Techniques/FInal_0. 09 BƯỚC KHAI TÂM.html",
+        "raw_url": "docs_raw/Beginners/Techniques/FInal_0. 09 BƯỚC KHAI TÂM.pdf",
+        "friendly_url": "beginners/techniques/final-0-09-buoc-khai-tam"
       },
       "Final _5. Kỹ thuật làm sạch luân xa (P1 - cho chính mình)": {
-        "html": "docs_html/Beginners/Techniques/Final _5. Kỹ thuật làm sạch luân xa (P1 - cho chính mình).html",
-        "raw": "docs_raw/Beginners/Techniques/Final _5. Kỹ thuật làm sạch luân xa (P1 - cho chính mình).pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final _5. Kỹ thuật làm sạch luân xa (P1 - cho chính mình).html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final _5. Kỹ thuật làm sạch luân xa (P1 - cho chính mình).pdf",
+        "friendly_url": "beginners/techniques/final-5-ky-thuat-lam-sach-luan-xa-p1-cho-chinh-minh"
       },
       "Final _6. Kỹ thuật làm sạch luân xa (P2 - trao đổi cảm nhận)": {
-        "html": "docs_html/Beginners/Techniques/Final _6. Kỹ thuật làm sạch luân xa (P2 - trao đổi cảm nhận).html",
-        "raw": "docs_raw/Beginners/Techniques/Final _6. Kỹ thuật làm sạch luân xa (P2 - trao đổi cảm nhận).pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final _6. Kỹ thuật làm sạch luân xa (P2 - trao đổi cảm nhận).html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final _6. Kỹ thuật làm sạch luân xa (P2 - trao đổi cảm nhận).pdf",
+        "friendly_url": "beginners/techniques/final-6-ky-thuat-lam-sach-luan-xa-p2-trao-doi-cam-nhan"
       },
       "Final_ 8. Kỹ thuật sử dụng nến_đèn cày dành cho kênh bên trái": {
-        "html": "docs_html/Beginners/Techniques/Final_ 8. Kỹ thuật sử dụng nến_đèn cày dành cho kênh bên trái.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_ 8. Kỹ thuật sử dụng nến_đèn cày dành cho kênh bên trái.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_ 8. Kỹ thuật sử dụng nến_đèn cày dành cho kênh bên trái.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_ 8. Kỹ thuật sử dụng nến_đèn cày dành cho kênh bên trái.pdf",
+        "friendly_url": "beginners/techniques/final-8-ky-thuat-su-dung-nen-den-cay-danh-cho-kenh-ben-trai"
       },
       "Final_1. Hướng dẫn động tác kéo Kundalini và Bandhan": {
-        "html": "docs_html/Beginners/Techniques/Final_1. Hướng dẫn động tác kéo Kundalini và Bandhan.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_1. Hướng dẫn động tác kéo Kundalini và Bandhan.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_1. Hướng dẫn động tác kéo Kundalini và Bandhan.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_1. Hướng dẫn động tác kéo Kundalini và Bandhan.pdf",
+        "friendly_url": "beginners/techniques/final-1-huong-dan-dong-tac-keo-kundalini-va-bandhan"
       },
       "Final_10._Làm sạch kênh trái bằng ajwain và camphor": {
-        "html": "docs_html/Beginners/Techniques/Final_10._Làm sạch kênh trái bằng ajwain và camphor.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_10._Làm sạch kênh trái bằng ajwain và camphor.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_10._Làm sạch kênh trái bằng ajwain và camphor.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_10._Làm sạch kênh trái bằng ajwain và camphor.pdf",
+        "friendly_url": "beginners/techniques/final-10-lam-sach-kenh-trai-bang-ajwain-va-camphor"
       },
       "Final_11.Kỹ thuật dùng ghee và camphor": {
-        "html": "docs_html/Beginners/Techniques/Final_11.Kỹ thuật dùng ghee và camphor.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_11.Kỹ thuật dùng ghee và camphor.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_11.Kỹ thuật dùng ghee và camphor.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_11.Kỹ thuật dùng ghee và camphor.pdf",
+        "friendly_url": "beginners/techniques/final-11-ky-thuat-dung-ghee-va-camphor"
       },
       "Final_13.Kỹ thuật Bandhan": {
-        "html": "docs_html/Beginners/Techniques/Final_13.Kỹ thuật Bandhan.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_13.Kỹ thuật Bandhan.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_13.Kỹ thuật Bandhan.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_13.Kỹ thuật Bandhan.pdf",
+        "friendly_url": "beginners/techniques/final-13-ky-thuat-bandhan"
       },
       "Final_13.Kỹ thuật dùng túi chườm đá": {
-        "html": "docs_html/Beginners/Techniques/Final_13.Kỹ thuật dùng túi chườm đá.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_13.Kỹ thuật dùng túi chườm đá.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_13.Kỹ thuật dùng túi chườm đá.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_13.Kỹ thuật dùng túi chườm đá.pdf",
+        "friendly_url": "beginners/techniques/final-13-ky-thuat-dung-tui-chuom-da"
       },
       "Final_14.Kỹ thuật trái dừa": {
-        "html": "docs_html/Beginners/Techniques/Final_14.Kỹ thuật trái dừa.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_14.Kỹ thuật trái dừa.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_14.Kỹ thuật trái dừa.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_14.Kỹ thuật trái dừa.pdf",
+        "friendly_url": "beginners/techniques/final-14-ky-thuat-trai-dua"
       },
       "Final_15.Kỹ thuật trái chanh": {
-        "html": "docs_html/Beginners/Techniques/Final_15.Kỹ thuật trái chanh.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_15.Kỹ thuật trái chanh.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_15.Kỹ thuật trái chanh.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_15.Kỹ thuật trái chanh.pdf",
+        "friendly_url": "beginners/techniques/final-15-ky-thuat-trai-chanh"
       },
       "Final_2. Ngâm chân": {
-        "html": "docs_html/Beginners/Techniques/Final_2. Ngâm chân.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_2. Ngâm chân.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_2. Ngâm chân.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_2. Ngâm chân.pdf",
+        "friendly_url": "beginners/techniques/final-2-ngam-chan"
       },
       "Final_3. Cân bằng kênh trái và kênh phải": {
-        "html": "docs_html/Beginners/Techniques/Final_3. Cân bằng kênh trái và kênh phải.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_3. Cân bằng kênh trái và kênh phải.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_3. Cân bằng kênh trái và kênh phải.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_3. Cân bằng kênh trái và kênh phải.pdf",
+        "friendly_url": "beginners/techniques/final-3-can-bang-kenh-trai-va-kenh-phai"
       },
       "Final_4. Những lời khẳng định cho kênh chính giữa": {
-        "html": "docs_html/Beginners/Techniques/Final_4. Những lời khẳng định cho kênh chính giữa.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_4. Những lời khẳng định cho kênh chính giữa.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_4. Những lời khẳng định cho kênh chính giữa.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_4. Những lời khẳng định cho kênh chính giữa.pdf",
+        "friendly_url": "beginners/techniques/final-4-nhung-loi-khang-dinh-cho-kenh-chinh-giua"
       },
       "Final_9.Kỹ thuật làm sạch luân xa bằng 3 cây nến": {
-        "html": "docs_html/Beginners/Techniques/Final_9.Kỹ thuật làm sạch luân xa bằng 3 cây nến.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_9.Kỹ thuật làm sạch luân xa bằng 3 cây nến.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_9.Kỹ thuật làm sạch luân xa bằng 3 cây nến.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_9.Kỹ thuật làm sạch luân xa bằng 3 cây nến.pdf",
+        "friendly_url": "beginners/techniques/final-9-ky-thuat-lam-sach-luan-xa-bang-3-cay-nen"
       },
       "Final_Kỹ thuật làm sạch thức ăn": {
-        "html": "docs_html/Beginners/Techniques/Final_Kỹ thuật làm sạch thức ăn.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_Kỹ thuật làm sạch thức ăn.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_Kỹ thuật làm sạch thức ăn.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_Kỹ thuật làm sạch thức ăn.pdf",
+        "friendly_url": "beginners/techniques/final-ky-thuat-lam-sach-thuc-an"
       },
       "Final_Kỹ thuật nện giày (shoebeat)": {
-        "html": "docs_html/Beginners/Techniques/Final_Kỹ thuật nện giày (shoebeat).html",
-        "raw": "docs_raw/Beginners/Techniques/Final_Kỹ thuật nện giày (shoebeat).pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_Kỹ thuật nện giày (shoebeat).html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_Kỹ thuật nện giày (shoebeat).pdf",
+        "friendly_url": "beginners/techniques/final-ky-thuat-nen-giay-shoebeat"
       },
       "Final_Kỹ thuật xông nhà": {
-        "html": "docs_html/Beginners/Techniques/Final_Kỹ thuật xông nhà.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_Kỹ thuật xông nhà.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_Kỹ thuật xông nhà.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_Kỹ thuật xông nhà.pdf",
+        "friendly_url": "beginners/techniques/final-ky-thuat-xong-nha"
       },
       "Final_Kỹ thuật đốt giấy": {
-        "html": "docs_html/Beginners/Techniques/Final_Kỹ thuật đốt giấy.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_Kỹ thuật đốt giấy.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_Kỹ thuật đốt giấy.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_Kỹ thuật đốt giấy.pdf",
+        "friendly_url": "beginners/techniques/final-ky-thuat-dot-giay"
       },
       "Final_Kỹ thuật đốt sợi dây": {
-        "html": "docs_html/Beginners/Techniques/Final_Kỹ thuật đốt sợi dây.html",
-        "raw": "docs_raw/Beginners/Techniques/Final_Kỹ thuật đốt sợi dây.pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_Kỹ thuật đốt sợi dây.html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_Kỹ thuật đốt sợi dây.pdf",
+        "friendly_url": "beginners/techniques/final-ky-thuat-dot-soi-day"
       },
       "Final_Phương pháp nồi đất (matka)": {
-        "html": "docs_html/Beginners/Techniques/Final_Phương pháp nồi đất (matka).html",
-        "raw": "docs_raw/Beginners/Techniques/Final_Phương pháp nồi đất (matka).pdf"
+        "html_url": "docs_html/Beginners/Techniques/Final_Phương pháp nồi đất (matka).html",
+        "raw_url": "docs_raw/Beginners/Techniques/Final_Phương pháp nồi đất (matka).pdf",
+        "friendly_url": "beginners/techniques/final-phuong-phap-noi-dat-matka"
       }
     }
   },
   "Sách": {
     "Tiếng Anh": {
       "Bible-Word": {
-        "html": "docs_html/Sách/Tiếng Anh/Bible-Word.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Bible-Word.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/Bible-Word.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Bible-Word.docx",
+        "friendly_url": "sach/tieng-anh/bible-word"
       },
       "Brahma Sutra": {
-        "html": "docs_html/Sách/Tiếng Anh/Brahma Sutra.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Brahma Sutra.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/Brahma Sutra.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Brahma Sutra.docx",
+        "friendly_url": "sach/tieng-anh/brahma-sutra"
       },
       "Life of Guru Nanak": {
-        "html": "docs_html/Sách/Tiếng Anh/Life of Guru Nanak.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Life of Guru Nanak.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/Life of Guru Nanak.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Life of Guru Nanak.docx",
+        "friendly_url": "sach/tieng-anh/life-of-guru-nanak"
       },
       "Navaratri": {
-        "html": "docs_html/Sách/Tiếng Anh/Navaratri.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Navaratri.pdf"
+        "html_url": "docs_html/Sách/Tiếng Anh/Navaratri.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Navaratri.pdf",
+        "friendly_url": "sach/tieng-anh/navaratri"
       },
       "Patanjali-sanskrit commentary": {
-        "html": "docs_html/Sách/Tiếng Anh/Patanjali-sanskrit commentary.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Patanjali-sanskrit commentary.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/Patanjali-sanskrit commentary.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Patanjali-sanskrit commentary.docx",
+        "friendly_url": "sach/tieng-anh/patanjali-sanskrit-commentary"
       },
       "Song Book": {
-        "html": "docs_html/Sách/Tiếng Anh/Song Book.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Song Book.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/Song Book.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Song Book.docx",
+        "friendly_url": "sach/tieng-anh/song-book"
       },
       "The Story of Moses": {
-        "html": "docs_html/Sách/Tiếng Anh/The Story of Moses.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/The Story of Moses.pdf"
+        "html_url": "docs_html/Sách/Tiếng Anh/The Story of Moses.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/The Story of Moses.pdf",
+        "friendly_url": "sach/tieng-anh/the-story-of-moses"
       },
       "The imitation of Christ": {
-        "html": "docs_html/Sách/Tiếng Anh/The imitation of Christ.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/The imitation of Christ.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/The imitation of Christ.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/The imitation of Christ.docx",
+        "friendly_url": "sach/tieng-anh/the-imitation-of-christ"
       },
       "The-Book-of-Adi-Shakti": {
-        "html": "docs_html/Sách/Tiếng Anh/The-Book-of-Adi-Shakti.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/The-Book-of-Adi-Shakti.pdf"
+        "html_url": "docs_html/Sách/Tiếng Anh/The-Book-of-Adi-Shakti.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/The-Book-of-Adi-Shakti.pdf",
+        "friendly_url": "sach/tieng-anh/the-book-of-adi-shakti"
       },
       "Treatments": {
-        "html": "docs_html/Sách/Tiếng Anh/Treatments.html",
-        "raw": "docs_raw/Sách/Tiếng Anh/Treatments.docx"
+        "html_url": "docs_html/Sách/Tiếng Anh/Treatments.html",
+        "raw_url": "docs_raw/Sách/Tiếng Anh/Treatments.docx",
+        "friendly_url": "sach/tieng-anh/treatments"
       }
     },
     "Tiếng Việt": {
       "21 Bước": {
-        "html": "docs_html/Sách/Tiếng Việt/21 Bước.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/21 Bước.pdf"
+        "html_url": "docs_html/Sách/Tiếng Việt/21 Bước.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/21 Bước.pdf",
+        "friendly_url": "sach/tieng-viet/21-buoc"
       },
       "Adi's Journey": {
-        "html": "docs_html/Sách/Tiếng Việt/Adi's Journey.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Adi's Journey.pdf"
+        "html_url": "docs_html/Sách/Tiếng Việt/Adi's Journey.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Adi's Journey.pdf",
+        "friendly_url": "sach/tieng-viet/adi-s-journey"
       },
       "Cuộc đời của Guru Nanak": {
-        "html": "docs_html/Sách/Tiếng Việt/Cuộc đời của Guru Nanak.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Cuộc đời của Guru Nanak.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Cuộc đời của Guru Nanak.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Cuộc đời của Guru Nanak.docx",
+        "friendly_url": "sach/tieng-viet/cuoc-doi-cua-guru-nanak"
       },
       "Hành trình bên trong": {
-        "html": "docs_html/Sách/Tiếng Việt/Hành trình bên trong.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Hành trình bên trong.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Hành trình bên trong.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Hành trình bên trong.docx",
+        "friendly_url": "sach/tieng-viet/hanh-trinh-ben-trong"
       },
       "Kỷ nguyên Hậu Hiện Đại": {
-        "html": "docs_html/Sách/Tiếng Việt/Kỷ nguyên Hậu Hiện Đại.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Kỷ nguyên Hậu Hiện Đại.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Kỷ nguyên Hậu Hiện Đại.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Kỷ nguyên Hậu Hiện Đại.docx",
+        "friendly_url": "sach/tieng-viet/ky-nguyen-hau-hien-dai"
       },
       "Mantra Book EN & VI": {
-        "html": "docs_html/Sách/Tiếng Việt/Mantra Book EN & VI.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Mantra Book EN & VI.pdf"
+        "html_url": "docs_html/Sách/Tiếng Việt/Mantra Book EN & VI.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Mantra Book EN & VI.pdf",
+        "friendly_url": "sach/tieng-viet/mantra-book-en-vi"
       },
       "Mantra Book": {
-        "html": "docs_html/Sách/Tiếng Việt/Mantra Book.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Mantra Book.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Mantra Book.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Mantra Book.docx",
+        "friendly_url": "sach/tieng-viet/mantra-book"
       },
       "Mantras": {
         "1 Mantras in Sahaja Yoga": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/1 Mantras in Sahaja Yoga.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/1 Mantras in Sahaja Yoga.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/1 Mantras in Sahaja Yoga.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/1 Mantras in Sahaja Yoga.docx",
+          "friendly_url": "sach/tieng-viet/mantras/1-mantras-in-sahaja-yoga"
         },
         "10 The 108 Invocations to Shri Ganesha": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/10 The 108 Invocations to Shri Ganesha.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/10 The 108 Invocations to Shri Ganesha.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/10 The 108 Invocations to Shri Ganesha.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/10 The 108 Invocations to Shri Ganesha.docx",
+          "friendly_url": "sach/tieng-viet/mantras/10-the-108-invocations-to-shri-ganesha"
         },
         "11 12 13 The 108 names of Shri Kartikeya - The 69 names of Shri Kundalini Shakti": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/11 12 13 The 108 names of Shri Kartikeya - The 69 names of Shri Kundalini Shakti.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/11 12 13 The 108 names of Shri Kartikeya - The 69 names of Shri Kundalini Shakti.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/11 12 13 The 108 names of Shri Kartikeya - The 69 names of Shri Kundalini Shakti.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/11 12 13 The 108 names of Shri Kartikeya - The 69 names of Shri Kundalini Shakti.docx",
+          "friendly_url": "sach/tieng-viet/mantras/11-12-13-the-108-names-of-shri-kartikeya-the-69-names-of-shri-kundalini-shakti"
         },
         "15 The Swādhishthāna Chakra": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/15 The Swādhishthāna Chakra.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/15 The Swādhishthāna Chakra.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/15 The Swādhishthāna Chakra.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/15 The Swādhishthāna Chakra.docx",
+          "friendly_url": "sach/tieng-viet/mantras/15-the-swadhishthana-chakra"
         },
         "17 Gayatri Mantra": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/17 Gayatri Mantra.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/17 Gayatri Mantra.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/17 Gayatri Mantra.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/17 Gayatri Mantra.docx",
+          "friendly_url": "sach/tieng-viet/mantras/17-gayatri-mantra"
         },
         "2 3 Mantra table for the chakras": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/2 3 Mantra table for the chakras.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/2 3 Mantra table for the chakras.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/2 3 Mantra table for the chakras.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/2 3 Mantra table for the chakras.docx",
+          "friendly_url": "sach/tieng-viet/mantras/2-3-mantra-table-for-the-chakras"
         },
         "27.  The 113 names of the Sat guru - page 89": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/27.  The 113 names of the Sat guru - page 89.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/27.  The 113 names of the Sat guru - page 89.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/27.  The 113 names of the Sat guru - page 89.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/27.  The 113 names of the Sat guru - page 89.docx",
+          "friendly_url": "sach/tieng-viet/mantras/27-the-113-names-of-the-sat-guru-page-89"
         },
         "34.  16 names of  Shrī Rāma - page 124": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/34.  16 names of  Shrī Rāma - page 124.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/34.  16 names of  Shrī Rāma - page 124.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/34.  16 names of  Shrī Rāma - page 124.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/34.  16 names of  Shrī Rāma - page 124.docx",
+          "friendly_url": "sach/tieng-viet/mantras/34-16-names-of-shri-rama-page-124"
         },
         "35. The 108 names of Shrī Rāma - page 125": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/35. The 108 names of Shrī Rāma - page 125.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/35. The 108 names of Shrī Rāma - page 125.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/35. The 108 names of Shrī Rāma - page 125.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/35. The 108 names of Shrī Rāma - page 125.docx",
+          "friendly_url": "sach/tieng-viet/mantras/35-the-108-names-of-shri-rama-page-125"
         },
         "4 The affirmation": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/4 The affirmation.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/4 The affirmation.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/4 The affirmation.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/4 The affirmation.docx",
+          "friendly_url": "sach/tieng-viet/mantras/4-the-affirmation"
         },
         "40.  The 69 names of Shrī Kubera - page 141": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/40.  The 69 names of Shrī Kubera - page 141.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/40.  The 69 names of Shrī Kubera - page 141.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/40.  The 69 names of Shrī Kubera - page 141.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/40.  The 69 names of Shrī Kubera - page 141.docx",
+          "friendly_url": "sach/tieng-viet/mantras/40-the-69-names-of-shri-kubera-page-141"
         },
         "41. 84 names of Shri Vishnumaya - page146": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/41. 84 names of Shri Vishnumaya - page146.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/41. 84 names of Shri Vishnumaya - page146.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/41. 84 names of Shri Vishnumaya - page146.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/41. 84 names of Shri Vishnumaya - page146.docx",
+          "friendly_url": "sach/tieng-viet/mantras/41-84-names-of-shri-vishnumaya-page146"
         },
         "42. the 99 names of Allāh - page 150": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/42. the 99 names of Allāh - page 150.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/42. the 99 names of Allāh - page 150.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/42. the 99 names of Allāh - page 150.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/42. the 99 names of Allāh - page 150.docx",
+          "friendly_url": "sach/tieng-viet/mantras/42-the-99-names-of-allah-page-150"
         },
         "43.  mantras of the Virata - page 153": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/43.  mantras of the Virata - page 153.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/43.  mantras of the Virata - page 153.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/43.  mantras of the Virata - page 153.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/43.  mantras of the Virata - page 153.docx",
+          "friendly_url": "sach/tieng-viet/mantras/43-mantras-of-the-virata-page-153"
         },
         "44. The 108 names of Lord Jesus Christ - page 156": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/44. The 108 names of Lord Jesus Christ - page 156.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/44. The 108 names of Lord Jesus Christ - page 156.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/44. The 108 names of Lord Jesus Christ - page 156.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/44. The 108 names of Lord Jesus Christ - page 156.docx",
+          "friendly_url": "sach/tieng-viet/mantras/44-the-108-names-of-lord-jesus-christ-page-156"
         },
         "45. The 108 invocations of Jesus Christ - page 160": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/45. The 108 invocations of Jesus Christ - page 160.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/45. The 108 invocations of Jesus Christ - page 160.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/45. The 108 invocations of Jesus Christ - page 160.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/45. The 108 invocations of Jesus Christ - page 160.docx",
+          "friendly_url": "sach/tieng-viet/mantras/45-the-108-invocations-of-jesus-christ-page-160"
         },
         "5 Shrī Ganesha Atharva Shīrsha": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/5 Shrī Ganesha Atharva Shīrsha.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/5 Shrī Ganesha Atharva Shīrsha.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/5 Shrī Ganesha Atharva Shīrsha.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/5 Shrī Ganesha Atharva Shīrsha.docx",
+          "friendly_url": "sach/tieng-viet/mantras/5-shri-ganesha-atharva-shirsha"
         },
         "54.  the 79-names-of-Shri-Raja-rajeshwari-page-192": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/54.  the 79-names-of-Shri-Raja-rajeshwari-page-192.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/54.  the 79-names-of-Shri-Raja-rajeshwari-page-192.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/54.  the 79-names-of-Shri-Raja-rajeshwari-page-192.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/54.  the 79-names-of-Shri-Raja-rajeshwari-page-192.docx",
+          "friendly_url": "sach/tieng-viet/mantras/54-the-79-names-of-shri-raja-rajeshwari-page-192"
         },
         "58.  the 108-tên-của-Shri-Mahakali": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/58.  the 108-tên-của-Shri-Mahakali.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/58.  the 108-tên-của-Shri-Mahakali.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/58.  the 108-tên-của-Shri-Mahakali.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/58.  the 108-tên-của-Shri-Mahakali.docx",
+          "friendly_url": "sach/tieng-viet/mantras/58-the-108-ten-cua-shri-mahakali"
         },
         "6 Aum To the divine essence of the prayer": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/6 Aum To the divine essence of the prayer.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/6 Aum To the divine essence of the prayer.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/6 Aum To the divine essence of the prayer.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/6 Aum To the divine essence of the prayer.docx",
+          "friendly_url": "sach/tieng-viet/mantras/6-aum-to-the-divine-essence-of-the-prayer"
         },
         "66. The 12 names of Shrī Sūrya - page 228": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/66. The 12 names of Shrī Sūrya - page 228.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/66. The 12 names of Shrī Sūrya - page 228.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/66. The 12 names of Shrī Sūrya - page 228.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/66. The 12 names of Shrī Sūrya - page 228.docx",
+          "friendly_url": "sach/tieng-viet/mantras/66-the-12-names-of-shri-surya-page-228"
         },
         "7 How to awaken Shrī Ganesha’s power within you": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/7 How to awaken Shrī Ganesha’s power within you.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/7 How to awaken Shrī Ganesha’s power within you.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/7 How to awaken Shrī Ganesha’s power within you.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/7 How to awaken Shrī Ganesha’s power within you.docx",
+          "friendly_url": "sach/tieng-viet/mantras/7-how-to-awaken-shri-ganesha-s-power-within-you"
         },
         "8 The 12 names of Shri Ganesha": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/8 The 12 names of Shri Ganesha.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/8 The 12 names of Shri Ganesha.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/8 The 12 names of Shri Ganesha.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/8 The 12 names of Shri Ganesha.docx",
+          "friendly_url": "sach/tieng-viet/mantras/8-the-12-names-of-shri-ganesha"
         },
         "9 The 108 names of Shri Ganesha": {
-          "html": "docs_html/Sách/Tiếng Việt/Mantras/9 The 108 names of Shri Ganesha.html",
-          "raw": "docs_raw/Sách/Tiếng Việt/Mantras/9 The 108 names of Shri Ganesha.docx"
+          "html_url": "docs_html/Sách/Tiếng Việt/Mantras/9 The 108 names of Shri Ganesha.html",
+          "raw_url": "docs_raw/Sách/Tiếng Việt/Mantras/9 The 108 names of Shri Ganesha.docx",
+          "friendly_url": "sach/tieng-viet/mantras/9-the-108-names-of-shri-ganesha"
         }
       },
       "Navaratri-01-22 original Xin dung thay doi": {
-        "html": "docs_html/Sách/Tiếng Việt/Navaratri-01-22 original Xin dung thay doi.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Navaratri-01-22 original Xin dung thay doi.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Navaratri-01-22 original Xin dung thay doi.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Navaratri-01-22 original Xin dung thay doi.docx",
+        "friendly_url": "sach/tieng-viet/navaratri-01-22-original-xin-dung-thay-doi"
       },
       "Niềm vui lan toả": {
-        "html": "docs_html/Sách/Tiếng Việt/Niềm vui lan toả.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Niềm vui lan toả.pdf"
+        "html_url": "docs_html/Sách/Tiếng Việt/Niềm vui lan toả.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Niềm vui lan toả.pdf",
+        "friendly_url": "sach/tieng-viet/niem-vui-lan-toa"
       },
       "Nuôi dạy trẻ trong Sahaja Yoga": {
-        "html": "docs_html/Sách/Tiếng Việt/Nuôi dạy trẻ trong Sahaja Yoga.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Nuôi dạy trẻ trong Sahaja Yoga.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Nuôi dạy trẻ trong Sahaja Yoga.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Nuôi dạy trẻ trong Sahaja Yoga.docx",
+        "friendly_url": "sach/tieng-viet/nuoi-day-tre-trong-sahaja-yoga"
       },
       "Patanjali-sanskrit commentary": {
-        "html": "docs_html/Sách/Tiếng Việt/Patanjali-sanskrit commentary.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Patanjali-sanskrit commentary.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Patanjali-sanskrit commentary.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Patanjali-sanskrit commentary.docx",
+        "friendly_url": "sach/tieng-viet/patanjali-sanskrit-commentary"
       },
       "Song Book 2019 Tiếng Việt": {
-        "html": "docs_html/Sách/Tiếng Việt/Song Book 2019 Tiếng Việt.html",
-        "raw": "docs_raw/Sách/Tiếng Việt/Song Book 2019 Tiếng Việt.docx"
+        "html_url": "docs_html/Sách/Tiếng Việt/Song Book 2019 Tiếng Việt.html",
+        "raw_url": "docs_raw/Sách/Tiếng Việt/Song Book 2019 Tiếng Việt.docx",
+        "friendly_url": "sach/tieng-viet/song-book-2019-tieng-viet"
       }
     }
   },
   "Sách kỹ thuật": {
     "Sổ tay Mantras": {
-      "html": "docs_html/Sách kỹ thuật/Sổ tay Mantras.html",
-      "raw": "docs_raw/Sách kỹ thuật/Sổ tay Mantras.docx"
+      "html_url": "docs_html/Sách kỹ thuật/Sổ tay Mantras.html",
+      "raw_url": "docs_raw/Sách kỹ thuật/Sổ tay Mantras.docx",
+      "friendly_url": "sach-ky-thuat/so-tay-mantras"
     },
     "Tiếng Anh": {
       "The Dhammapada": {
-        "html": "docs_html/Sách kỹ thuật/Tiếng Anh/The Dhammapada.html",
-        "raw": "docs_raw/Sách kỹ thuật/Tiếng Anh/The Dhammapada.docx"
+        "html_url": "docs_html/Sách kỹ thuật/Tiếng Anh/The Dhammapada.html",
+        "raw_url": "docs_raw/Sách kỹ thuật/Tiếng Anh/The Dhammapada.docx",
+        "friendly_url": "sach-ky-thuat/tieng-anh/the-dhammapada"
       }
     },
     "Treatments": {
-      "html": "docs_html/Sách kỹ thuật/Treatments.html",
-      "raw": "docs_raw/Sách kỹ thuật/Treatments.docx"
+      "html_url": "docs_html/Sách kỹ thuật/Treatments.html",
+      "raw_url": "docs_raw/Sách kỹ thuật/Treatments.docx",
+      "friendly_url": "sach-ky-thuat/treatments"
     }
   }
 }

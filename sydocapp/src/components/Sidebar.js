@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import {
-  Box,
   Typography,
   Divider,
   List,
@@ -9,6 +8,7 @@ import {
   ListItemSecondaryAction,
   Collapse,
   IconButton,
+  Box
 } from "@mui/material";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
@@ -16,22 +16,13 @@ import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import DescriptionIcon from "@mui/icons-material/Description";
 import SlideshowIcon from "@mui/icons-material/Slideshow";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
-import AuthDialog from "./AuthDialog";
+import { toAsciiFriendly } from "../utils/friendlyUrl";
 
 function Sidebar({ tree, onSelect, selectedTitle }) {
   const [openFolders, setOpenFolders] = useState(() => {
     const stored = localStorage.getItem("sidebarOpenFolders");
     return stored ? JSON.parse(stored) : {};
   });
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    () => localStorage.getItem("isAuthenticated") === "true"
-  );
-  const [authDialogOpen, setAuthDialogOpen] = useState(false);
-  const [pendingAuthNode, setPendingAuthNode] = useState(null);
-
-  useEffect(() => {
-    localStorage.setItem("isAuthenticated", isAuthenticated.toString());
-  }, [isAuthenticated]);
 
   const handleToggle = (folderPath) => {
     setOpenFolders((prev) => {
@@ -41,159 +32,165 @@ function Sidebar({ tree, onSelect, selectedTitle }) {
     });
   };
 
-  const handleAuth = (password) => {
-    if (password === "kundalini") {
-      setIsAuthenticated(true);
-      setAuthDialogOpen(false);
-      // (Optional) Could re-trigger a render if needed for pending nodes.
-    } else {
-      alert("Incorrect password");
-    }
-  };
-
-  const handleAuthDialogOpen = (node) => {
-    setPendingAuthNode(node);
-    setAuthDialogOpen(true);
-  };
-
-  const handleAuthDialogClose = () => {
-    setAuthDialogOpen(false);
-    setPendingAuthNode(null);
-  };
-
-  // Checks if the entry is a dual-view file (has "html" or "raw" property)
+  // Check if a node is a dual-view file
   const isDualViewFile = (obj) =>
-    typeof obj === "object" && obj !== null && (obj.html || obj.raw);
+    typeof obj === "object" &&
+    obj !== null &&
+    ("html_url" in obj && "raw_url" in obj && "friendly_url" in obj);
 
   const getRawFileIcon = (rawUrl) => {
     const ext = rawUrl.split(".").pop().toLowerCase();
     const iconProps = { sx: { fontSize: "12px" } };
     if (ext === "pdf") return <PictureAsPdfIcon {...iconProps} />;
-    if (ext === "doc" || ext === "docx")
-      return <DescriptionIcon {...iconProps} />;
-    if (ext === "ppt" || ext === "pptx")
-      return <SlideshowIcon {...iconProps} />;
+    if (ext === "doc" || ext === "docx") return <DescriptionIcon {...iconProps} />;
+    if (ext === "ppt" || ext === "pptx") return <SlideshowIcon {...iconProps} />;
     return <InsertDriveFileIcon {...iconProps} />;
   };
 
   const renderTree = (node, level = 0, path = "") =>
     Object.entries(node).map(([key, value]) => {
       const currentPath = path ? `${path}/${key}` : key;
-
-      if (value && value.protected && !isAuthenticated) {
-        return (
-          <ListItem
-            button
-            key={currentPath}
-            sx={{ pl: 2 + level * 2, mb: 0.5 }}
-          >
-            <ListItemText
-              primary={key}
-              primaryTypographyProps={{
-                variant: "subtitle1",
-                fontWeight: "bold",
-                style: { whiteSpace: "normal", wordBreak: "break-word" },
-              }}
-              onClick={() => handleAuthDialogOpen(node)}
-            />
-          </ListItem>
-        );
-      }
       if (isDualViewFile(value)) {
-        const isHTMLSelected = selectedTitle === `${key} (HTML)`;
-        const isRawSelected = selectedTitle === `${key} (Raw)`;
         return (
           <ListItem
-            button
+            // removed button prop
+            component="div"
             key={currentPath}
-            sx={{
-              pl: 2 + level * 2,
-              bgcolor: isHTMLSelected ? "grey.300" : "inherit",
-              borderRadius: isHTMLSelected ? 1 : 0,
-              mb: 0.5,
-            }}
+            sx={{ pl: 1 + level, py: 0.2 }}
             onClick={(e) => {
               e.stopPropagation();
-              onSelect(`${key} (HTML)`, value.html);
+              onSelect(key, value.html_url, value.friendly_url);
             }}
           >
             <ListItemText
-              primary={key}
+              primary={
+                <span
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                  }}
+                >
+                  <span>{key}</span>
+                  <IconButton
+                    size="small"
+                    sx={{ p: 0.5 }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onSelect(key, value.raw_url, value.friendly_url);
+                    }}
+                  >
+                    {getRawFileIcon(value.raw_url)}
+                  </IconButton>
+                </span>
+              }
               primaryTypographyProps={{
-                variant: "body1",
+                variant: "body2",
                 sx: {
-                  fontSize: "0.8rem",
+                  fontSize: "0.7rem",
                   whiteSpace: "normal",
                   wordBreak: "break-word",
+                  lineHeight: 1.2,
+                  p: 0,
                 },
               }}
             />
-            {value.raw && (
-              <ListItemSecondaryAction>
-                <IconButton
-                  color={isRawSelected ? "secondary" : "primary"}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onSelect(`${key} (Raw)`, value.raw);
-                  }}
-                >
-                  {getRawFileIcon(value.raw)}
-                </IconButton>
-              </ListItemSecondaryAction>
-            )}
           </ListItem>
         );
       } else if (typeof value === "string") {
         const isSelected = selectedTitle === key;
         return (
           <ListItem
-            button
+            // removed button prop
+            component="div"
             key={currentPath}
             onClick={(e) => {
               e.stopPropagation();
               onSelect(key, value);
             }}
             sx={{
-              pl: 2 + level * 2,
+              pl: 1 + level,
               bgcolor: isSelected ? "grey.300" : "inherit",
               borderRadius: isSelected ? 1 : 0,
-              mb: 0.5,
+              py: 0.2,
             }}
           >
             <ListItemText
               primary={key}
               primaryTypographyProps={{
-                variant: "body1",
+                variant: "body2",
                 sx: {
                   fontSize: "0.8rem",
                   whiteSpace: "normal",
                   wordBreak: "break-word",
+                  lineHeight: 1.2,
+                  p: 0,
                 },
               }}
             />
           </ListItem>
         );
       } else if (typeof value === "object" && value !== null) {
-        const isOpen = openFolders[currentPath] || false;
-        return (
-          <React.Fragment key={currentPath}>
+        // If folder is empty
+        if (Object.keys(value).length === 0) {
+          return (
             <ListItem
-              button
-              onClick={() => handleToggle(currentPath)}
-              sx={{ pl: 2 + level * 2, mb: 0.5 }}
+              // removed button prop
+              component="div"
+              key={currentPath}
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelect(key, null);
+              }}
+              sx={{ pl: 1 + level, py: 0.2 }}
             >
               <ListItemText
                 primary={key}
                 primaryTypographyProps={{
-                  variant: "subtitle1",
-                  fontWeight: "bold",
-                  style: { whiteSpace: "normal", wordBreak: "break-word" },
+                  variant: "body2",
+                  sx: {
+                    fontSize: "0.8rem",
+                    whiteSpace: "normal",
+                    wordBreak: "break-word",
+                    lineHeight: 1.2,
+                    p: 0,
+                  },
                 }}
               />
-              {isOpen ? <ExpandLess /> : <ExpandMore />}
+            </ListItem>
+          );
+        }
+        const isOpen = openFolders[currentPath] || false;
+        return (
+          <React.Fragment key={currentPath}>
+            <ListItem
+              // removed button prop
+              component="div"
+              onClick={() => handleToggle(currentPath)}
+              sx={{ pl: 1 + level, py: 0.2, minHeight: "28px" }}
+            >
+              <ListItemText
+                primary={key}
+                primaryTypographyProps={{
+                  variant: "subtitle2",
+                  fontWeight: "bold",
+                  style: {
+                    whiteSpace: "normal",
+                    wordBreak: "break-word",
+                    lineHeight: 1.2,
+                    padding: 0,
+                  },
+                }}
+              />
+              {isOpen ? (
+                <ExpandLess style={{ fontSize: "1.2rem" }} />
+              ) : (
+                <ExpandMore style={{ fontSize: "1.2rem" }} />
+              )}
             </ListItem>
             <Collapse in={isOpen} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
+              <List component="div" disablePadding dense>
                 {renderTree(value, level + 1, currentPath)}
               </List>
             </Collapse>
@@ -205,16 +202,14 @@ function Sidebar({ tree, onSelect, selectedTitle }) {
 
   return (
     <Box sx={{ width: 280, overflowX: "hidden" }}>
-      <Typography variant="h6" sx={{ p: 2 }}>
+      <Typography variant="h6" sx={{ p: 1 }}>
         Sahaja Yoga Docs
       </Typography>
       <Divider />
-      <List>{renderTree(tree)}</List>
-      <AuthDialog
-        open={authDialogOpen}
-        onClose={handleAuthDialogClose}
-        onAuth={handleAuth}
-      />
+      {/* Use dense here to reduce item padding globally */}
+      <List dense>
+        {tree ? renderTree(tree, 0, "") : null}
+      </List>
     </Box>
   );
 }

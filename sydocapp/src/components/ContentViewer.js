@@ -3,11 +3,21 @@ import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import { Document, Page } from "react-pdf";
 import mammoth from "mammoth";
 import TableOfContents from "./TableOfContents";
+import YouTube from 'react-youtube'; // Import react-youtube
 
 /* Helper to determine media type */
 function getMediaType(url) {
-  if (/youtu\.be|youtube\.com/i.test(url)) return "youtube";
-  if (/soundcloud\.com/i.test(url)) return "soundcloud";
+  console.log("URL:", url); // Debugging log
+  if (!url) return null;
+  if (/youtu\.be|youtube\.com/i.test(url)) {
+    console.log("Identified as YouTube"); // Debugging log
+    return "youtube";
+  }
+  if (/soundcloud\.com/i.test(url)) {
+    console.log("Identified as SoundCloud"); // Debugging log
+    return "soundcloud";
+  }
+  console.log("Not identified as YouTube or SoundCloud"); // Debugging log
   return null;
 }
 
@@ -38,13 +48,16 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
   };
 
   const ext = docUrl ? getExtension(docUrl) : null;
+  console.log("DEBUG: ContentViewer docUrl:", docUrl, "extension:", ext);
+  
   const mediaType = docUrl ? getMediaType(docUrl) : null;
 
   useEffect(() => {
     if (!contentRef.current) return;
     const updateWidth = () => {
       if (contentRef.current) {
-        setPageWidth(contentRef.current.offsetWidth - (isMobile ? 32 : 40));
+        const margin = isMobile ? 16 : 40; // reduced margin for mobile
+        setPageWidth(contentRef.current.offsetWidth - margin);
       }
     };
     updateWidth();
@@ -66,6 +79,8 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
     }
   }, [docUrl, ext]);
 
+  console.log("ContentViewer docUrl:", docUrl, "mediaType:", mediaType); // Debugging log
+
   // Process YouTube URLs by embedding players.
   if (docUrl && mediaType === "youtube") {
     const trimmedUrl = docUrl.trim();
@@ -85,10 +100,15 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
       console.error("Error parsing YouTube URL:", err);
     }
     if (videoId) {
-      const embedUrl =
-        "https://www.youtube.com/embed/" +
-        videoId +
-        "?rel=0&showinfo=0&controls=1";
+      const opts = {
+        height: '480',
+        width: '100%',
+        playerVars: {
+          // https://developers.google.com/youtube/player_parameters
+          autoplay: 0,
+        },
+      };
+
       return (
         <Box
           ref={contentRef}
@@ -100,19 +120,12 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
             width: "100%",
           }}
         >
-          <iframe
-            width="100%"
-            height="100%"
-            src={embedUrl}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          <YouTube videoId={videoId} opts={opts} />
         </Box>
       );
     } else {
       console.error("Invalid YouTube URL:", docUrl);
+      return <Typography>Invalid YouTube URL</Typography>;
     }
   } else if (docUrl && mediaType === "soundcloud") {
     return (
@@ -165,13 +178,18 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
             p: { xs: 2, sm: 3 },
             height: "calc(100vh - 64px)",
             overflow: "auto",
+            overflowX: isMobile ? "hidden" : "auto", // changed for mobile
             width: "100%",
           }}
         >
           <iframe
             src={docUrl}
             title="Raw PDF"
-            style={{ width: "100%", height: "100%", border: "none" }}
+            style={{
+              width: "100%",
+              height: isMobile ? "calc(100vh - 100px)" : "100%",
+              border: "none",
+            }}
           />
         </Box>
       );
@@ -183,16 +201,15 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
             flexGrow: 1,
             p: { xs: 2, sm: 3 },
             height: "calc(100vh - 64px)",
+            display: "flex",
+            justifyContent: "center",
             overflow: "auto",
+            overflowX: "auto", // added for horizontal responsiveness
             width: "100%",
           }}
         >
           <Document file={docUrl}>
-            <Page
-              pageNumber={1}
-              width={pageWidth}
-              scale={isMobile ? 0.8 : 1}
-            />
+            {pageWidth && <Page pageNumber={1} width={pageWidth} scale={isMobile ? 0.8 : 1} />}
           </Document>
         </Box>
       );
@@ -206,6 +223,7 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
           p: { xs: 2, sm: 3 },
           height: "calc(100vh - 64px)",
           overflow: "auto",
+          overflowX: "auto", // ensures responsive horizontal scrolling
           width: "100%",
           "& img": { maxWidth: "100%", height: "auto" },
         }}
@@ -217,7 +235,11 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
         )}
       </Box>
     );
-  } else {
+  } else if (ext === "html") { // New branch for HTML files
+    const designedWidth = 800;
+    // Use the container width from our ref (or default to designedWidth if not set)
+    const currentWidth = contentRef.current ? contentRef.current.offsetWidth : designedWidth;
+    const scaleFactor = Math.min(1, currentWidth / designedWidth);
     return (
       <Box
         ref={contentRef}
@@ -229,13 +251,56 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
           width: "100%",
         }}
       >
-        <iframe
-          src={docUrl}
-          title="Document Content"
-          style={{ width: "100%", height: "100%", border: "none" }}
-        />
+        <Box
+          sx={{
+            width: designedWidth,
+            mx: "auto",
+            transform: `scale(${scaleFactor})`,
+            transformOrigin: "top left",
+            // Adjust the container height to account for scaling
+            height: `calc((100vh - 64px) / ${scaleFactor})`,
+          }}
+        >
+          <iframe
+            src={docUrl}
+            title="HTML Document"
+            style={{
+              width: designedWidth,
+              height: "calc(100vh - 64px)",
+              border: "none",
+            }}
+          />
+        </Box>
       </Box>
     );
+  } else {
+    if (docUrl && mediaType !== "youtube") {
+      return (
+        <Box
+          ref={contentRef}
+          sx={{
+            flexGrow: 1,
+            p: { xs: 2, sm: 3 },
+            height: "calc(100vh - 64px)",
+            overflow: "auto",
+            overflowX: isMobile ? "hidden" : "auto", // changed for mobile
+            width: "100%",
+          }}
+        >
+          <iframe
+            src={docUrl}
+            title="Document Content"
+            style={{
+              width: "100%",
+              height: isMobile ? "calc(100vh - 100px)" : "100%",
+              border: "none",
+            }}
+          />
+        </Box>
+      );
+    } else {
+      return null;
+    }
   }
 }
 

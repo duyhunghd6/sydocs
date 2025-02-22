@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import { Document, Page } from "react-pdf";
-import mammoth from "mammoth";
+import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack";
 import TableOfContents from "./TableOfContents";
 import YouTube from 'react-youtube'; // Import react-youtube
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 /* Helper to determine media type */
 function getMediaType(url) {
@@ -209,7 +210,7 @@ function ContentViewer({ docUrl, selectedTitle, manifest, handleSelect, onBack }
           }}
         >
           <Document file={docUrl}>
-            {pageWidth && <Page pageNumber={1} width={pageWidth} scale={isMobile ? 0.8 : 1} />}
+            {pageWidth && <Page pageNumber={1} width={pageWidth} />}
           </Document>
         </Box>
       );
